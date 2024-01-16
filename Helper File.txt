@@ -1,0 +1,13 @@
+echo $env:Path
+
+# Add Anaconda to the system PATH
+$env:Path += ";C:\ProgramData\anaconda3\Scripts"
+$env:Path += ";C:\ProgramData\anaconda3"
+
+use this video to setup the python env - https://www.youtube.com/watch?v=GZbeL5AcTgw&ab_channel=Indently
+	1. execute command - py -m venv .venv
+	2. close and reopen a new powershell window.
+
+conda create -p venv python=3.10 -y
+
+pip install python-dotenv
